@@ -1,14 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="catalog/view/theme/theme_petrov/css/style.css">
+  <link rel="stylesheet" href="catalog/view/theme/theme_petrov/css/swiper.min.css">
+  <title>Document</title>
 </head>
-<body>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repudiandae officia quod voluptas nobis minus hic, totam animi! Nisi eveniet voluptas facere consequuntur velit, eius deserunt quae. Delectus, laudantium quis.</p>
-   <script src="js/script.js"></script>
+<body style="margin: 0;">
+<header class="page-header"></header>
+<main class="main">
+  <section class="first">
+    <div class="first__wrapper">
+      <div class="first__inner">
+        <span class="first__description">Идеальный подарок себе, отцу, начальнику или лучшему другу</span>
+        <h1 class="first__title">Бочки от 3 до 100л<br>из колотого кавказского дуба от производителя Petrov Dub</h1>
+        <h2 class="first__subtitle">Делаем бочки без дефектов и сучков</h2>
+      </div>
+    </div>
+  </section>
+  <section class="utp">
+    <div class="utp__wrapper">
+      <!-- Swiper -->
+      <div class="utp__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide  utp__slide--1">
+            <h3 class="utp__item-title">Без брака</h3>
+            <span class="utp__item-description">Перед отправкой Петров лично проверяет каждое изделие. Если есть подозрение на брак, бочка не будет продана и отправится на витрину.</span>
+          </div>
+          <div class="swiper-slide  utp__slide--2">
+            <h3 class="utp__item-title">Бочки всегда в наличии</h3>
+            <span class="utp__item-description">На основе имеющейся статистики мы заранее прогнозируем спрос и заготавливаем бочки. Если вам нужна бочка без гравировки, то мы отправим ее в день оплаты.</span>
+          </div>
+          <div class="swiper-slide  utp__slide--3">
+            <h3 class="utp__item-title">Оплата при получении</h3>
+            <span class="utp__item-description">Перечисляете аванс перед началом работ, а оставшуюся сумму оплачиваете при получении бочки в транспортной компании.</span>
+          </div>
+          <div class="swiper-slide  utp__slide--4">
+            <h3 class="utp__item-title">Доставим бесплатно</h3>
+            <span class="utp__item-description">В большинство городов России мы доставим бочку бесплатно.</span>
+            <a href="#" class="utp__check-city-link">Проверьте ваш город</a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <section class="pcatalog">
+    <div class="pcatalog__wrapper">
+      <h3 class="pcatalog__title">Каталог</h3>
+      <ul class="pcatalog__list">
+        <li class="pcatalog__item">
+          <h3 class="pcatalog__item-title">Бочки</h3>
+          <span class="pcatalog__item-price">от 3 350 Р</span>
+          <a href="/main-catalog/bochki/" class="pcatalog__item-link">Смотреть</a>
+        </li>
+        <li class="pcatalog__item">
+          <h3 class="pcatalog__item-title">Кадки</h3>
+          <span class="pcatalog__item-price">от 2 700 Р</span>
+          <a href="/main-catalog/kadushki/" class="pcatalog__item-link">Смотреть</a>
+        </li>
+        <li class="pcatalog__item">
+          <h3 class="pcatalog__item-title">Комплектующие</h3>
+          <span class="pcatalog__item-price">от 3 350 Р</span>
+          <a href="/main-catalog/komplektuyushie/" class="pcatalog__item-link">Смотреть</a>
+        </li>
+        <li class="pcatalog__item">
+          <h3 class="pcatalog__item-title">Сувениры</h3>
+          <span class="pcatalog__item-price">от 600 Р</span>
+          <a href="/main-catalog/suveniry/" class="pcatalog__item-link">Смотреть</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="new-year">
+    <div class="new-year__wrapper">
+      <div class="new-year__container">
+        <h3 class="new-year__title">Новогодняя гравировка!</h3>
+        <span class="new-year__description">Выберите один из 2х вариантов Новогодней гравировки и получите:</span>
+        <ul class="new-year__list">
+          <li class="new-year__item">Гравировку одной стороны <strong>в подарок!</strong><br><span class="or">или</span><br></li>
+          <li class="new-year__item">Новогоднюю гравировку всей бочки в круг <strong>всего за 600р.</strong></li>
+        </ul>
+        <div class="new-year__show-more-field">
+          <a href="/novogodnaya-gravirovka" class="new-year__show-more-btn">Смотреть эскизы</a>
+        </div>
+      </div>
+      <div class="new-year__preview-field">
+        <img src="/image/catalog/petrov/new-year-preview.png" alt="" class="new-year__preview-img">
+      </div>
+    </div>
+  </section>
+  <section class="tech"></section>
+  <section class="search-city" id="search-city-y">
+    <div class="search-city__wrapper">
+      <div class="search-city__search-field">
+        <h2 class="search-city__title all-title">В эти города мы доставим ваш заказ бесплатно!</h2>
+        <div class="search-city__input-field">
+          <input type="text" class="search-city__input" id="search-city-input" placeholder="Введите свой город">
+        </div>
+        <div class="search-city__container" id="search-city-container">
+          <ul>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+            <li>Алушта</li>
+          </ul>
+        </div>
+      </div>
+      <div class="search-city__delivery-field">
+        <h3 class="search-city__delivery-title">Не нашли свой населенный пункт?<br>Ничего страшного!</h3>
+        <p class="search-city__delivery-paragraph">Подберем для вас ближайшую транспортную компанию и компенсируем часть расходов за доставку, вплоть до полной компенсации.</p>
+        <div class="search-city__delivery-link-field">
+          <a href="/oplata-i-dostavka" class="search-city__delivery-link">Подробнее</a>
+        </div>
+        <div class="search-city__delivery-img-field">
+          <img src="/image/catalog/petrov/delivery.png" alt="транспортные компании" class="search-city__delivery-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cases">
+    <div class="cases__wrapper">
+      <h2 class="cases__title">Мы сделали более 5000 бочек для наших клиентов:</h2>
+      <p class="cases__description">Взгляните сами: эти бочки и кадки уже у наших клиентов. Есть работы как с гравировкой по шаблонам, так и сложные индивидуальные заказы</p>
+      <span class="cases__notice">Все без дефектов, отчетливо виден радиальный распил и высокая плотность колец</span>
+      <div class="cases__sliders">
+        <div class="cases__toggles">
+          <button class="cases__toggle  cases__toggle--template  active" id="cases-template">Гравировка<br>по шаблонам</button>
+          <button class="cases__toggle  cases__toggle--custom" id="cases-custom">Индивидуальные<br>заказы</button>
+        </div>
+        <div class="cases__all-slides">
+          <div class="cases__slider-container  cases__slider-container--template">
+            <!-- Swiper -->
+            <div class="swiper-container  cases__swiper  cases__swiper--template">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/01.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/02.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/03.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/04.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/05.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/06.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar  cases__swiper-scrollbar--template"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next  swiper-button-next--template"></div>
+              <div class="swiper-button-prev  swiper-button-prev--template"></div>
+            </div>
+            <!-- /Swiper -->
+          </div>
+          <div class="cases__slider-container  cases__slider-container--custom  visually-hidden2">
+            <!-- Swiper -->
+            <div class="swiper-container  cases__swiper  cases__swiper--custom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/01.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/02.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/03.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/04.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/05.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="cases__swiper-link">
+                    <img src="/image/catalog/cases/06.jpg" alt="" class="cases__swiper-img">
+                  </a>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar  cases__swiper-scrollbar--custom"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next  swiper-button-next--custom"></div>
+              <div class="swiper-button-prev  swiper-button-prev--custom"></div>
+            </div>
+            <!-- /Swiper -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="socials">
+    <div class="socials__wrapper">
+      <div class="socials__container">
+        <h3 class="socials__title">Хотите увидеть больше?</h3>
+        <span class="socials__description">Мы постоянно выкладываем в соцсети уже выполненные работы и гордимся ими.</span>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="https://www.instagram.com/petrov_dub" target="_blank" class="socials__link  socials__link--insta">Петров Дуб в инстаграме</a>
+          </li>
+          <li class="socials__item">
+            <a href="https://vk.com/petrovdub" target="_blank" class="socials__link  socials__link--vk">Петров Дуб вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.facebook.com/petrovdub/" target="_blank" class="socials__link  socials__link--ok">Петров Дуб в одноклассниках</a>
+          </li>
+          <li class="socials__item">
+            <a href="https://ok.ru/group/53994241065101" target="_blank" class="socials__link  socials__link--fb">Петров Дуб в facebook</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="for-what">
+    <div class="for-what__wrapper">
+      <h3 class="for-what__title">Нашу продукцию отлично берут</h3>
+      <!-- Swiper -->
+      <div class="for-what__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide  for-what__slide--1">
+            <h4 class="for-what__item-title">В качестве подарка начальнику или руководителю<br class="for-what-enter"><br class="for-what-enter"></h4>
+            <span class="for-what__item-description"><b>Нанесем логотип компании</b>, девиз фирмы, выполним под заказ гравировку любой сложности (даже на боках).</span>
+          </div>
+          <div class="swiper-slide  for-what__slide--1">
+            <h4 class="for-what__item-title">Для родственников и друзей, которые изготавливают вино, коньяк и самогон</h4>
+            <span class="for-what__item-description">К бочке мы <b>прикладываем пошаговую инструкцию</b> по подготовке, использованию и хранению наших изделий. Если у получателя возникают дополнительные вопросы, мы с радостью консультируем.</span>
+          </div>
+          <div class="swiper-slide  for-what__slide--1">
+            <h4 class="for-what__item-title">Для своего винодельческого производства</h4>
+            <span class="for-what__item-description"><b>Разбираемся в теме</b> и ответим на любой ваш вопрос. Вы опытный винодел/самогонщик? Предоставим всю техническую информацию о нашем продукте, подберем оптимальный обжиг и литраж под ваши требования.</span>
+          </div>
+          <div class="swiper-slide  for-what__slide--1">
+            <h4 class="for-what__item-title">Для оптовых<br>продаж</h4>
+            <span class="for-what__item-description"><b>Работаем официально</b>, по договору, переводу по р/с. Без НДС. Предоставляем лист оценки качества по каждому заказу, Разрабатываем индивидуальные условия сотрудничества.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="feedback__wrapper">
+      <div class="feedback__petrov">
+        <img src="/image/catalog/petrov/petrov.jpg" alt="Петров Станислав" class="feedback__petrov-img">
+        <span class="feedback__petrov-name">Станислав Петров, основатель компании Petrov Dub</span>
+      </div>
+      <div class="feedback__slider-container">
+        <h3 class="feedback__title">Petrov Dub это не только качество, но и <span class="italic">вежливое и заботливое отношение к клиенту</span></h3>
+        <span class="feedback__description">А еще у нас только "живые", настоящие отзывы!</span>
+        <!-- Swiper -->
+        <div class="swiper-container  feedback__swiper  feedback__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="feedback__swiper-link">
+                <img src="/image/catalog/cases/01.jpg" alt="" class="feedback__swiper-img">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="feedback__swiper-link">
+                <img src="/image/catalog/cases/01.jpg" alt="" class="feedback__swiper-img">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="feedback__swiper-link">
+                <img src="/image/catalog/cases/01.jpg" alt="" class="feedback__swiper-img">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="feedback__swiper-link">
+                <img src="/image/catalog/cases/01.jpg" alt="" class="feedback__swiper-img">
+              </a>
+            </div>
+          </div>
+          <!-- Add Scrollbar -->
+          <div class="swiper-scrollbar  feedback__swiper-scrollbar"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next  swiper-button-next--feedback"></div>
+          <div class="swiper-button-prev  swiper-button-prev--feedback"></div>
+        </div>
+        <!-- /Swiper -->
+      </div>
+    </div>
+  </section>
+  <section class="braiding">
+    <div class="braiding__wrapper">
+      <h2 class="braiding__title">Гравировка под заказ <br>и плетение</h2>
+      <div class="braiding__container">
+        <p class="braiding__paragraph">В среднем, за одну сторону наши коллеги берут по 600 р, в Москве до 1500 р. <strong>Мы же считаем адекватной ценой – 300 р. за сторону.</strong></p>
+        <p class="braiding__paragraph">Можем выполнить гравировку по нашим макетам и под заказ. Срок изготовления до 2-х рабочих дней.</p>
+        <a href="/gravirovka" class="braiding__link">У нас более 300 готовых эскизов!</a>
+        <div class="braiding__img-field">
+          <img src="/image/catalog/petrov/braiding.png" alt="гравировка и плетение бочек" class="braiding__img">
+          <span class="braiding__low">Цены ниже рынка</span>
+        </div>
+        <div class="braiding__show-more-field">
+          <a href="/gravirovka" class="braiding__show-more-btn">Смотреть эскизы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="catalog/view/javascript/theme_petrov/jquery-3.4.1.min.js"></script>
+<script src="catalog/view/javascript/theme_petrov/swiper.min.js"></script>
+<script src="catalog/view/javascript/theme_petrov/petrov.js"></script>
+<script src="catalog/view/javascript/theme_petrov/utp.js"></script>
+<script src="catalog/view/javascript/theme_petrov/cases.js"></script>
+<script src="catalog/view/javascript/theme_petrov/for-what.js"></script>
+<script src="catalog/view/javascript/theme_petrov/feedback.js"></script>
 </body>
 </html>

@@ -1,0 +1,202 @@
+.pcatalog {
+  background-color: $bg--alt2;
+  @include defaults;
+}
+.pcatalog__wrapper {
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 30px;
+    padding-bottom: 77px;
+  }
+  @media #{$min-tablet-width} {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 98px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+    @include centers;
+    padding-bottom: 120px;
+  }
+}
+.pcatalog__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  font-family: $font--main !important;
+  line-height: normal !important;
+  @media #{$max-mobile-width} {
+    font-size: 24px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 36px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 40px;
+  }
+}
+.pcatalog__list {
+  padding-left: 0;
+  @include centers;
+  margin-bottom: 0;
+  @media #{$max-mobile-width} {
+    max-width: $max-mobile-wrapper;
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    max-width: 610px;
+    margin-top: 40px;
+  }
+  @media #{$min-desktop-width} {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+.pcatalog__item {
+  background-color: $bg--cards;
+  position: relative;
+  overflow: hidden;
+  @media #{$max-mobile-width} {
+    margin-top: 23px;
+    padding-left: 21px;
+    padding-top: 53px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 33px;
+    padding-left: 82px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 19px;
+    width: 40%;
+    flex-grow: 1;
+    padding-top: 127px;
+    padding-left: 84px;
+  }
+  &:nth-child(2n-1) {
+    @media #{$min-desktop-width} {
+      margin-right: 10px;
+    }
+  }
+  &:nth-child(2n) {
+    @media #{$min-desktop-width} {
+      margin-left: 10px;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &:nth-child(1)::after {
+    background-image: url("/image/catalog/petrov/catalog__bochka.png");
+    @media #{$max-mobile-width} {
+      width: 187px;
+      height: 194px;
+      top: 15px;
+      right: -85px
+    }
+    @media #{$min-tablet-width} {
+      right: -20px;
+      top: 10px;
+      width: 245px;
+      height: 254px;
+    }
+    @media #{$min-desktop-width} {
+      top: 50px;
+    }
+  }
+  &:nth-child(2)::after {
+    background-image: url("/image/catalog/petrov/catalog__kadka.png");
+    @media #{$max-mobile-width} {
+      width: 234px;
+      height: 181px;
+      top: 15px;
+      right: -85px
+    }
+    @media #{$min-tablet-width} {
+      right: -16px;
+      top: 29px;
+      width: 308px;
+      height: 238px;
+    }
+    @media #{$min-desktop-width} {
+      top: 69px;
+    }
+  }
+  &:nth-child(3)::after {
+    background-image: url("/image/catalog/petrov/catalog__komplect.png");
+    @media #{$max-mobile-width} {
+      width: 193px;
+      height: 189px;
+      top: 15px;
+      right: -85px
+    }
+    @media #{$min-tablet-width} {
+      right: -42px;
+      top: 17px;
+      width: 254px;
+      height: 248px;
+    }
+    @media #{$min-desktop-width} {
+      top: 57px;
+    }
+  }
+  &:nth-child(4)::after {
+    background-image: url("/image/catalog/petrov/catalog__suven.png");
+    @media #{$max-mobile-width} {
+      width: 193px;
+      height: 189px;
+      top: 15px;
+      right: -70px
+    }
+    @media #{$min-tablet-width} {
+      right: -42px;
+      top: 17px;
+      width: 320px;
+      height: 193px;
+    }
+    @media #{$min-desktop-width} {
+      top: 57px;
+    }
+  }
+}
+.pcatalog__item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font--main !important;
+  line-height: normal !important;
+  @media #{$max-mobile-width} {
+    font-size: 24px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 32px;
+  }
+}
+.pcatalog__item-price {
+  display: block;
+  @media #{$max-mobile-width} {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 18px;
+    margin-top: 9px;
+    margin-bottom: 40px;
+  }
+  @media #{$min-desktop-width} {
+    margin-bottom: 38px;
+  }
+}
+.pcatalog__item-link {
+  @include link;
+}

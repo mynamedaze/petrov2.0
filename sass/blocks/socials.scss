@@ -1,0 +1,217 @@
+.socials {
+  @include defaults;
+}
+.socials__wrapper {
+  position: relative;
+  z-index: 2;
+  @media #{$max-mobile-width} {
+    padding-bottom: 84px;
+  }
+  @media #{$min-tablet-width} {
+    position: relative;
+    height: 300px;
+  }
+  @media #{$min-desktop-width} {
+    height: 333px;
+    max-width: $max-desktop-wrapper;
+    @include centers;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media #{$min-tablet-width} {
+      background-image: url("/image/catalog/petrov/list2.png");
+      width: 394px;
+      height: 304px;
+      left: 0;
+      top: -100px;
+    }
+    @media #{$min-desktop-width} {
+      left: -190px;
+      top: -80px;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media #{$max-mobile-width} {
+      background-image: url("/image/catalog/petrov/socials__pattern--mobile.png");
+      width: 734px;
+      height: 148px;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    @media #{$min-tablet-width} {
+      background-image: url("/image/catalog/petrov/socials__pattern--tablet.png");
+      width: 736px;
+      height: 358px;
+      bottom: 0;
+      right: -100px;
+    }
+    @media #{$min-desktop-width} {
+      right: 30px;
+    }
+  }
+}
+.socials__container {
+  box-shadow: $box-shadow;
+  background-color: $bg--main;
+  position: relative;
+  z-index: 5;
+  @media #{$max-mobile-width} {
+    padding-top: 73px;
+    padding-bottom: 77px
+  }
+  @media #{$min-tablet-width} {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 101px;
+    width: 609px;
+    position: absolute;
+    padding-top: 90px;
+    padding-bottom: 96px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 133px;
+    bottom: 116px;
+  }
+  &::before {
+    @media #{$min-tablet-width} {
+      position: absolute;
+      content: "";
+      z-index: 6;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      @media #{$min-tablet-width} {
+        background-image: url("/image/catalog/petrov/hand--tablet.png");
+        width: 283px;
+        height: 319px;
+        left: -140px;
+        bottom: -101px;
+      }
+      @media #{$min-desktop-width} {
+        background-image: url("/image/catalog/petrov/hand--desktop.png");
+        width: 397px;
+        height: 448px;
+        left: -328px;
+        bottom: -116px;
+      }
+    }
+  }
+  &::after {
+    position: absolute;
+    z-index: 6;
+    content: "";
+    bottom: -75px;
+    width: 195px;
+    height: 139px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/image/catalog/petrov/list1.png");
+    @media #{$max-mobile-width} {
+      right: 10%;
+    }
+    @media #{$min-tablet-width} {
+      right: -55px;
+    }
+  }
+}
+.socials__title {
+  margin-top: 0;
+  font-family: $font--alt;
+  color: $color--alt2;
+  font-weight: 400;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+.socials__description {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  max-width: 310px;
+  @include centers;
+  @media #{$max-mobile-width} {
+    line-height: 22px;
+  }
+  @media #{$min-tablet-width} {
+    line-height: 24px;
+  }
+}
+.socials__list {
+  list-style-type: none;
+  font-size: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  @include centers;
+  @media #{$max-mobile-width} {
+    max-width: 320px;
+    margin-top: 25px;
+  }
+  @media #{$min-tablet-width} {
+    width: 320px;
+    margin-top: 41px;
+  }
+}
+.socials__link {
+  display: block;
+  width: 69px;
+  height: 55px;
+  border: 1px solid $bg--button;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    background-color: $bg--button;
+    box-shadow: 0 3px 13px 0 $bg--button;
+  }
+}
+.socials__link--insta {
+  background-image: url("/image/catalog/petrov/instagram.svg"), url("/image/catalog/petrov/instagram--hover.svg");
+  background-size: 25px 25px, 0 0;
+  &:hover {
+    background-size: 0 0, 25px 25px;
+  }
+}
+.socials__link--vk {
+  background-image: url("/image/catalog/petrov/vk.svg"), url("/image/catalog/petrov/vk--hover.svg");
+  background-size: 33px 19px, 0 0;
+  &:hover {
+    background-size: 0 0, 33px 19px;
+  }
+}
+.socials__link--ok {
+  background-image: url("/image/catalog/petrov/ok.svg"), url("/image/catalog/petrov/ok--hover.svg");
+  background-size: 18px 29px, 0 0;
+  &:hover {
+    background-size: 0 0, 18px 29px;
+  }
+}
+.socials__link--fb {
+  background-image: url("/image/catalog/petrov/fb.svg"), url("/image/catalog/petrov/fb--hover.svg");
+  background-size: 13px 25px, 0 0;
+  &:hover {
+    background-size: 0 0, 13px 25px;
+  }
+}

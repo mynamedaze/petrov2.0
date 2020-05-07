@@ -1,0 +1,148 @@
+.first {
+  @include defaults;
+  background-color: $bg--alt1;
+}
+.first__wrapper {
+  position: relative;
+  z-index: 1;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 55px;
+    padding-bottom: 100px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 173px;
+    padding-bottom: 70px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+    @include centers;
+    padding-top: 143px;
+  }
+  &::after {
+    @media #{$min-tablet-width} {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      right: -1122px;
+      width: 1252px;
+      height: 2912px;
+      background-position: 0 0;
+      background-size: 1252px auto;
+      background-image: url("/image/catalog/petrov/wood-pattern.svg");
+    }
+    @media #{$min-desktop-width} {
+      height: 2824px;
+      right: -1022px;
+    }
+  }
+}
+.first__inner {
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-bottom: 358px;
+  }
+  @media #{$min-tablet-width} {
+    padding-right: 300px;
+    padding-bottom: 305px;
+  }
+  @media #{$min-desktop-width} {
+    padding-right: 480px;
+    padding-bottom: 250px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20px;
+    height: 47px;
+    background-image: url("/image/catalog/petrov/molotok.svg");
+    @media #{$max-mobile-width} {
+      left: 50%;
+      bottom: -79px;
+      transform: translateX(-50%);
+    }
+    @media #{$min-tablet-width} {
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media #{$max-mobile-width} {
+      bottom: 0;
+      left: 50%;
+      width: 374px;
+      height: 326px;
+      background-image: url("/image/catalog/petrov/first__main--mobile.png");
+      transform: translateX(-40%);
+    }
+    @media #{$min-tablet-width} {
+      top: 50px;
+      right: -213px;
+      width: 587px;
+      height: 511px;
+      background-image: url("/image/catalog/petrov/first__main--tablet.png");
+    }
+    @media #{$min-desktop-width} {
+      top: -95px;
+      right: -10px;
+    }
+  }
+}
+.first__description {
+  font-family: $font--alt;
+  color: $color--alt2;
+  @media #{$max-mobile-width} {
+    font-size: 18px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 22px;
+  }
+}
+.first__title {
+  font-weight: 400 !important;
+  text-transform: none !important;
+  font-family: $font--main !important;
+  line-height: normal !important;
+  @media #{$max-mobile-width} {
+    font-size: 22px !important;
+    letter-spacing: .5px !important;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 40px !important;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 45px !important;
+    margin-top: 12px !important;
+  }
+}
+.first__subtitle {
+  line-height: normal !important;
+  font-family: $font--main !important;
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: .5px;
+  text-transform: none !important;
+  @media #{$max-mobile-width} {
+    font-size: 16px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 30px;
+  }
+}

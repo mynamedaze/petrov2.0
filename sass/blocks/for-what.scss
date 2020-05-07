@@ -1,0 +1,169 @@
+.for-what {
+  background-color: $bg--alt2;
+  @include defaults;
+}
+.for-what__wrapper {
+  @include paddings;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 72px;
+    padding-bottom: 68px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 85px;
+    padding-bottom: 45px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+    @include centers;
+    padding-top: 112px;
+    padding-bottom: 58px;
+  }
+  &::after {
+    @media #{$min-desktop-width} {
+      position: absolute;
+      content: "";
+      z-index: 2;
+      width: 513px;
+      height: 719px;
+      right: -170px;
+      bottom: 100px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/image/catalog/petrov/kadka-present.png");
+    }
+  }
+  &::before {
+    @media #{$min-desktop-width} {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      right: -1030px;
+      top: 0;
+      width: 1252px;
+      height: 100%;
+      background-image: url("/image/catalog/petrov/wood-pattern.svg");
+    }
+  }
+}
+.for-what__title {
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  font-family: $font--main;
+  @media #{$max-mobile-width} {
+    font-size: 22px;
+    padding-right: 55px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 32px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 36px;
+  }
+  &::after {
+    @media #{$max-mobile-width} {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 50%;
+      width: 46px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/image/catalog/petrov/swipe.svg");
+    }
+  }
+}
+.for-what__item-title {
+  font-family: $font--alt;
+  font-weight: 400;
+  color: $color--alt2;
+  margin-top: 0;
+  margin-bottom: 13px;
+  line-height: normal !important;
+  @media #{$max-mobile-width} {
+    font-size: 20px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 20px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 22px;
+  }
+  & .for-what-enter {
+    @media #{$max-mobile-width} {
+      display: none;
+    }
+  }
+}
+.for-what__item-description {
+  font-size: 14px;
+  @media #{$max-mobile-width} {
+    line-height: 22px;
+  }
+  @media #{$min-tablet-width} {
+    line-height: 24px;
+  }
+}
+.for-what__swiper {
+  overflow-x: hidden;
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 76px;
+  }
+  @media #{$min-desktop-width} {
+    width: 820px;
+    margin-top: 58px;
+  }
+  .swiper-wrapper {
+    @media #{$min-tablet-width} {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .swiper-slide {
+      width: 40%;
+      position: relative;
+      padding-top: 100px;
+      @media #{$min-tablet-width} {
+        flex-grow: 1;
+        margin-bottom: 40px;
+      }
+      @media #{$min-desktop-width} {
+        margin-bottom: 60px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 82px;
+        height: 90px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url("/image/catalog/petrov/icon_bochka.svg");
+      }
+    }
+    .swiper-slide:nth-child(2n) {
+      @media #{$min-tablet-width} {
+        margin-left: 25px;
+      }
+      @media #{$min-desktop-width} {
+        margin-left: 50px;
+      }
+    }
+    .swiper-slide:nth-child(2n-1) {
+      @media #{$min-tablet-width} {
+        margin-right: 25px;
+      }
+      @media #{$min-desktop-width} {
+        margin-right: 50px;
+      }
+    }
+  }
+}

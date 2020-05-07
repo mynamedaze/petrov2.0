@@ -1,0 +1,258 @@
+.search-city {
+  background-color: $bg--alt2;
+  position: relative;
+  z-index: 2;
+  @include defaults;
+}
+.search-city__wrapper {
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
+  @media #{$min-tablet-width} {
+    padding-bottom: 97px;
+    padding-top: 90px;
+    padding-left: $padding--tablet;
+    padding-right: $padding--tablet;
+  }
+  @media #{$min-desktop-width} {
+    display: flex;
+    padding-top: 112px;
+    padding-bottom: 120px;
+    max-width: $max-desktop-wrapper;
+    @include centers;
+  }
+  &::after {
+    @media #{$min-tablet-width} {
+      position: absolute;
+      z-index: -2;
+      content: "";
+      right: -1030px;
+      top: 0;
+      width: 1252px;
+      height: 686px;
+      background-image: url("/image/catalog/petrov/wood-pattern.svg");
+    }
+    @media #{$min-desktop-width} {
+      height: 383px;
+    }
+  }
+}
+.search-city__search-field {
+  @media #{$max-mobile-width} {
+    padding-left: $padding--mobile;
+    padding-right: $padding--mobile;
+    max-width: $max-mobile-wrapper;
+    @include centers;
+  }
+  @media #{$min-desktop-width} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.search-city__title {
+  margin-top: 0;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: normal !important;
+  font-family: $font--main !important;
+  @media #{$max-mobile-width} {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+  @media #{$min-tablet-width} {
+    margin-bottom: 40px;
+    font-size: 36px;
+    width: 500px;
+    @include centers;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 40px;
+  }
+}
+.search-city__input-field {
+  position: relative;
+  @media #{$min-tablet-width} {
+    max-width: 430px;
+    @include centers;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 100%;
+    width: 430px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 50%;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/image/catalog/petrov/search.svg");
+    transform: translateY(-50%);
+  }
+}
+.search-city__input {
+  background-color: $bg--main;
+  width: 100%;
+  height: 55px;
+  border: 0 solid transparent;
+  padding-left: 60px !important;
+  padding-right: 20px !important;
+  text-transform: none !important;
+}
+.search-city__container {
+  height: 213px;
+  background-color: $bg--main;
+  overflow-y: scroll;
+  margin-top: 20px;
+  padding-top: 18px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  @media #{$min-tablet-width} {
+    max-width: 430px;
+    @include centers;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 100%;
+    width: 430px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  ul {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  li {
+    line-height: 24px;
+  }
+}
+#search-city-container::-webkit-scrollbar-track
+{
+  background-color: $bg--alt1;
+}
+
+#search-city-container::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: $bg--button;
+}
+
+#search-city-container::-webkit-scrollbar-thumb
+{
+  background-color: $bg--button;
+}
+//delivery
+.search-city__delivery-field {
+  background-color: $bg--main;
+  position: relative;
+  box-shadow: $box-shadow;
+  @media #{$max-mobile-width} {
+    padding-left: $padding--mobile;
+    padding-right: $padding--mobile;
+    padding-top: 78px;
+    padding-bottom: 70px;
+    margin-top: 76px;
+  }
+  @media #{$min-tablet-width} {
+    max-width: 609px;
+    @include centers;
+    margin-top: 55px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    padding-left: 65px;
+    padding-right: 65px;
+    background-repeat: no-repeat;
+    background-size: 207px 251px;
+    background-position: 126% 103%;
+    background-image: url("/image/catalog/petrov/search__bochka.png");
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 10px;
+  }
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 394px;
+    height: 304px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/image/catalog/petrov/list2.png");
+    @media #{$max-mobile-width} {
+      left: -195px;
+      bottom: -154px;
+    }
+    @media #{$min-tablet-width} {
+      left: -165px;
+      bottom: -184px;
+    }
+  }
+  &::after {
+    @media #{$min-tablet-width} {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 195px;
+      height: 139px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/image/catalog/petrov/list1.png");
+      right: -38px;
+      top: -100px;
+    }
+  }
+}
+.search-city__delivery-title {
+  font-family: $font--alt;
+  color: $color--alt2;
+  font-weight: 400;
+  margin-top: 0;
+  @media #{$max-mobile-width} {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 22px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 45px;
+  }
+}
+.search-city__delivery-paragraph {
+  font-size: 14px;
+  @media #{$max-mobile-width} {
+    line-height: 22px;
+  }
+  @media #{$min-tablet-width} {
+    line-height: 24px;
+  }
+}
+.search-city__delivery-link-field {
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+}
+.search-city__delivery-link {
+  @include link;
+}
+.search-city__delivery-img-field {
+  @media #{$max-mobile-width} {
+    max-width: 302px;
+    @include centers;
+    margin-top: 27px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 35px;
+    width: 397px;
+  }
+}
