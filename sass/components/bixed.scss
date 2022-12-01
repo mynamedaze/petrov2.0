@@ -1,0 +1,139 @@
+.bixed {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  @media #{$max-mobile-width} {
+    width: 100%;
+  }
+  @media #{$max-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media #{$min-tablet-width} {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media #{$min-desktop-width} {
+    left: 0;
+    bottom: 60px;
+    transform: translateX(0);
+    width: 60px;
+    height: 60px;
+  }
+}
+.bixed__link {
+  font-size: 0;
+  width: 33%;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media #{$min-desktop-width} {
+    display: none;
+  }
+}
+.bixed__link--phone {
+  background-color: #37C837;
+  background-image: url("/image/catalog/petrov/bixed-phone.svg");
+  background-size: 30px auto;
+}
+.bixed__link--whatsapp {
+  background-image: url("/image/catalog/petrov/bixed-whatsapp.png");
+  background-size: 37px auto;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+.bixed__link--telegram {
+  background-image: url("/image/catalog/petrov/bixed-telegram.png");
+  background-size: 37px auto;
+}
+.bixed__button {
+  @media #{$max-tablet-width} {
+    display: none;
+  }
+  @media #{$min-desktop-width} {
+    width: 100%;
+    height: 100%;
+    border: 0 solid transparent;
+    background-color: #37C837;
+    font-size: 0;
+    padding: 0 0 !important;
+    border-radius: 0 !important;
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: center;
+    background-image: url("/image/catalog/petrov/bixed-phone.svg");
+  }
+  &:hover {
+    @media #{$min-desktop-width} {
+      width: 100%;
+      height: 100%;
+      border: 0 solid transparent;
+      font-size: 0;
+      padding: 0 0 !important;
+      border-radius: 0 !important;
+      background-repeat: no-repeat;
+      background-size: 40px auto;
+      background-position: center;
+      background-image: url("/image/catalog/petrov/bixed-phone.svg");
+    }
+  }
+}
+.bixed__desktop {
+  transition: all 1s ease 0s;
+  @media #{$max-tablet-width} {
+    display: none;
+  }
+  @media #{$min-desktop-width} {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    left: -400px;
+    bottom: 60px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+.bixed__desktop--active {
+  left: 0;
+}
+.bixed__contact {
+  padding-left: 40px;
+  font-family: $font--main;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+.bixed__contact--phone {
+  &::after {
+    background-image: url("/image/catalog/petrov/bixed-phone-black.svg");
+    background-size: 25px auto;
+  }
+}
+.bixed__contact--whatsapp {
+  &::after {
+    background-image: url("/image/catalog/petrov/bixed-whatsapp.png");
+  }
+}
+.bixed__contact--telegram {
+  &::after {
+    background-image: url("/image/catalog/petrov/bixed-telegram.png");
+  }
+}

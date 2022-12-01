@@ -11,10 +11,14 @@
 @import "./blocks/first";
 @import './blocks/utp';
 @import './blocks/pcatalog';
+@import './blocks/bad-good';
 @import './blocks/new-year';
 @import './blocks/search-city';
 @import './blocks/cases';
 @import './blocks/socials';
 @import './blocks/for-what';
 @import './blocks/feedback';
-@import 'blocks/braiding';
+@import './blocks/braiding';
+
+//components
+@import './components/bixed';

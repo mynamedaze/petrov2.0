@@ -146,6 +146,23 @@
     @media #{$max-mobile-width} {
       top: 0;
       right: 10px;
+      width: 82px;
+      height: 142px;
+    }
+    @media #{$min-tablet-width} {
+      top: 5px;
+      right: 30px;
+      width: 106px;
+      height: 187px;
+    }
+  }
+}
+.utp__slide--3 {
+  &::after {
+    background-image: url("/image/catalog/petrov/utp--3.png");
+    @media #{$max-mobile-width} {
+      top: 0;
+      right: 10px;
       width: 62px;
       height: 122px;
     }
@@ -157,9 +174,9 @@
     }
   }
 }
-.utp__slide--3 {
+.utp__slide--4 {
   &::after {
-    background-image: url("/image/catalog/petrov/utp--3.png");
+    background-image: url("/image/catalog/petrov/utp--4.png");
     @media #{$max-mobile-width} {
       top: 10px;
       right: 10px;
@@ -174,9 +191,9 @@
     }
   }
 }
-.utp__slide--4 {
+.utp__slide--5 {
   &::after {
-    background-image: url("/image/catalog/petrov/utp--4.png");
+    background-image: url("/image/catalog/petrov/utp--5.png");
     @media #{$max-mobile-width} {
       top: 10px;
       right: 10px;

@@ -22,4 +22,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+  $('.bixed__button').click(function () {
+    $('.bixed__desktop').toggleClass('bixed__desktop--active');
+  });
 });
